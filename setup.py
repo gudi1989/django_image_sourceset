@@ -13,6 +13,8 @@ setup(
         'django_image_sourceset.management',
         'django_image_sourceset.management.commands',
         'django_image_sourceset.templatetags',
+        'django_image_sourceset.templates',
+        'django_image_sourceset.templates.django_image_sourceset',
     ],
     install_requires = [
         'Django >=2.0',
