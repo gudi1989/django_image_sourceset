@@ -16,6 +16,8 @@ setup(
         'django_image_sourceset.templates',
         'django_image_sourceset.templates.django_image_sourceset',
     ],
+    include_package_data=True,
+    zip_safe=False,
     install_requires=[
         'Django >=2.0',
     ],
