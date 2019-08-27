@@ -1,22 +1,18 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = "django_image_sourceset",
-    version = "0.1.0",
-    description = 'Create a sourceset for an django image',
-    author = 'Martin Gutmair',
-    author_email = 'martin@gutmair.de',
-    url = 'https://github.com/gudi1989/django_image_sourceset',
-    long_description = open('README.rst', 'r').read(),
-    packages = [
+    name="django_image_sourceset",
+    version="0.1.0",
+    description='Create a sourceset for an django image',
+    author='Martin Gutmair',
+    author_email='martin@gutmair.de',
+    url='https://github.com/gudi1989/django_image_sourceset',
+    long_description=open('README.rst', 'r').read(),
+    packages=[
         'django_image_sourceset',
-        'django_image_sourceset.management',
-        'django_image_sourceset.management.commands',
-        'django_image_sourceset.templatetags',
-        'django_image_sourceset.templates',
-        'django_image_sourceset.templates.django_image_sourceset',
     ],
-    install_requires = [
+    include_package_data=True,
+    install_requires=[
         'Django >=2.0',
     ],
     classifiers=[
@@ -30,4 +26,3 @@ setup(
         'Topic :: Utilities'
     ],
 )
-
